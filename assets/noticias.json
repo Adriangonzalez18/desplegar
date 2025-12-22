@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titulo": "Nueva actividad cultural en Marcilla",
+    "fecha": "2025-01-15",
+    "descripcion": "La asociación organiza una jornada cultural abierta a todos los vecinos.",
+    "contenido": "Aquí va el texto largo de la noticia. Puedes poner varios párrafos explicando todo con detalle.",
+    "imagen": "assets/IMG_4111.JPG"
+  },
+  {
+    "id": 2,
+    "titulo": "Mejoras en el entorno urbano",
+    "fecha": "2025-02-02",
+    "descripcion": "Se han iniciado trabajos de mejora en varias zonas del municipio.",
+    "contenido": "Texto largo con todos los detalles de la mejora urbana.",
+    "imagen": "assets/IMG_8838.JPG"
+  },
+  {
+    "id": 3,
+    "titulo": "Mejoras en el entorno urbano",
+    "fecha": "2025-10-08",
+    "descripcion": "Se han iniciado trabajos de mejora en varias zonas del municipio.",
+    "contenido": "Texto largo con todos los detalles de la mejora urbana.",
+    "imagen": "assets/IMG_1369.JPG"
+  },
+  {
+    "id": 4,
+    "titulo": "Mejoras en el eee urbano",
+    "fecha": "2025-11-08",
+    "descripcion": "Se han iniciado trabajos de mejora en varias zonas del municipio.",
+    "contenido": "Texto largo con todos los detalles de la mejora urbana.",
+    "imagen": "assets/IMG_1369.JPG"
+  }
+]
