@@ -1,0 +1,122 @@
+/* You can add global styles to this file, and also import other style files */
+/* ===== Variables ===== */
+:root {
+    --mv-green: #2E7D32;
+    --mv-green-dark: #256628;
+    --mv-light: #F5F7F4;
+}
+
+.text-primary {
+    color: #2E7D32
+}
+
+/* ===== Body ===== */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--mv-light);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-mv .navbar-nav {
+    gap: 1.5rem;
+    /* Espaciado entre enlaces */
+}
+
+.navbar-mv .nav-link {
+    font-weight: 500;
+    color: #000000;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-mv .nav-link:hover {
+    color: #A5D6A7;
+    /* Verde claro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.navbar-mv .navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ===== Hero ===== */
+.hero {
+    height: 70vh;
+    background: url('assets/IMG_8740.JPG');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p.lead {
+    font-size: 1.25rem;
+}
+
+/* ===== Tarjetas ===== */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    color: var(--mv-green-dark);
+    margin-bottom: 0.75rem;
+}
+
+/* ===== Botones ===== */
+.btn-outline-success:hover {
+    background-color: var(--mv-green);
+    color: #fff;
+    border-color: var(--mv-green);
+}
+
+/* ===== Footer ===== */
+.footer-mv {
+    background-color: var(--mv-green-dark);
+    color: #fff;
+}
+
+.footer-mv a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-mv a:hover {
+    color: #A5D6A7;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+app-root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}

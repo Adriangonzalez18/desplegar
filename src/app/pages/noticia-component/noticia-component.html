@@ -1,0 +1,24 @@
+<section class="container py-5" *ngIf="noticia; else cargando">
+
+  <h1 class="mb-3">{{ noticia.titulo }}</h1>
+  <p class="text-muted">{{ noticia.fecha | date:'longDate' }}</p>
+
+  <img
+    [src]="noticia.imagen"
+    class="img-fluid rounded mb-4"
+    alt="Imagen noticia"
+  >
+
+  <p class="lead">{{ noticia.contenido }}</p>
+
+  <a routerLink="/blog" class="btn btn-outline-success mt-4">
+    ← Volver a noticias
+  </a>
+
+</section>
+
+<ng-template #cargando>
+  <div class="container py-5 text-center">
+    <p>Cargando noticia...</p>
+  </div>
+</ng-template>

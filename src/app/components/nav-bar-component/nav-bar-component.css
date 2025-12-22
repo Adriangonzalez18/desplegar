@@ -1,0 +1,21 @@
+.navbar-mv .navbar-nav {
+    gap: 1.5rem;
+    /* Espaciado entre enlaces */
+}
+
+.navbar-mv .nav-link {
+    font-weight: 500;
+    color: #000000;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar-mv .nav-link:hover {
+    color: #A5D6A7;
+    /* Verde claro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+.navbar-mv .navbar-brand {
+    display: flex;
+    align-items: center;
+}

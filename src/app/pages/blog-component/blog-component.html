@@ -1,0 +1,33 @@
+<!-- HERO -->
+<header class="hero text-dark p-5 mb-4 text-center">
+  <div class="container">
+    <h1 class="display-4">ASOCIACIÓN MARCILLA VIVA</h1>
+  </div>
+</header>
+
+<!-- Noticias -->
+<section class="container py-5">
+  <h2 class="text-center mb-4">Noticias</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4" *ngFor="let noticia of noticias">
+      <div class="card h-100 shadow-sm">
+
+        <img [src]="noticia.imagen" class="card-img-top" alt="Imagen noticia">
+
+        <div class="card-body">
+          <h5 class="card-title">{{ noticia.titulo }}</h5>
+          <small class="text-muted">{{ noticia.fecha | date:'longDate' }}</small>
+          <p class="card-text mt-2">{{ noticia.descripcion }}</p>
+
+          <a [routerLink]="['/noticia', noticia.id]" class="btn btn-outline-success btn-sm mt-2">
+            Leer más
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>

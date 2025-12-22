@@ -1,0 +1,14 @@
+.fondo-seccion {
+  background-image: url('/assets/IMG_9825.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+
+@media (max-width: 768px) {
+  .fondo-seccion {
+    background-image: none;
+    border-top: none; /* Si quieres quitarlo en móvil */
+  }
+}

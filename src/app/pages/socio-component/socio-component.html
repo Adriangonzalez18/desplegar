@@ -1,0 +1,95 @@
+<section class="fondo-seccion">
+  <!-- HERO -->
+  <header class="hero text-black p-5 mb-4 text-center">
+    <div class="container">
+      <h1 class="display-4">ASOCIACIÓN MARCILLA VIVA</h1>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Formulario -->
+    <div class="row justify-content-center align-items-start g-4">
+
+          <!-- Formulario -->
+    <div class="col-md-5">
+      <form class="p-4 shadow-sm border rounded bg-light" [formGroup]="socioForm" (ngSubmit)="enviar()">
+
+        <h3 class="text-center text-secondary mb-4">
+          <i class="bi bi-envelope-paper-heart text-success me-2"></i>
+          Hazte Socio
+        </h3>
+
+        <!-- Nombre -->
+        <div class="mb-2">
+          <label class="form-label">Nombre *</label>
+          <input type="text" class="form-control" placeholder="Escribe tu nombre" formControlName="nombre">
+        </div>
+
+        <!-- Apellidos -->
+        <div class="mb-2">
+          <label class="form-label">Apellidos *</label>
+          <input type="text" class="form-control" placeholder="Escribe tus apellidos" formControlName="apellidos">
+        </div>
+
+        <!-- DNI -->
+        <div class="mb-2">
+          <label class="form-label">DNI *</label>
+          <input type="text" class="form-control" placeholder="12345678A" formControlName="dni">
+        </div>
+
+        <!-- Domicilio -->
+        <div class="mb-2">
+          <label class="form-label">Domicilio *</label>
+          <input type="text" class="form-control" placeholder="Dirección completa" formControlName="domicilio">
+        </div>
+
+        <!-- Email -->
+        <div class="mb-2">
+          <label class="form-label">Correo electrónico *</label>
+          <input type="email" class="form-control" placeholder="correo@ejemplo.com" formControlName="email">
+        </div>
+
+        <!-- Teléfono -->
+        <div class="mb-2">
+          <label class="form-label">Teléfono *</label>
+          <input type="tel" class="form-control" placeholder="Tu número de teléfono" formControlName="telefono">
+        </div>
+
+       <div class="mb-3">
+          <label class="form-label">Forma de pago *</label>
+          <select class="form-select" formControlName="formaPago">
+            <option value="" disabled selected>Selecciona una forma de pago</option>
+            <option value="bizum">Bizum</option>
+            <option value="transferencia">Transferencia bancaria</option>
+            <option value="transferencia">Tarjeta de credito</option>
+          </select>
+
+          <div class="text-danger"
+              *ngIf="socioForm.get('formaPago')?.touched && socioForm.get('formaPago')?.invalid">
+            Debes seleccionar una forma de pago.
+          </div>
+        </div>
+
+        <!-- Política de privacidad -->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" formControlName="aceptaPoliticas">
+          <label class="form-check-label">
+            Acepto las políticas de privacidad *
+          </label>
+        </div>
+
+        <div class="text-center mt-3">
+          <button type="submit"
+                  class="btn btn-success px-4 w-100"
+                  [disabled]="socioForm.invalid">
+            Enviar formulario
+          </button>
+        </div>
+
+      </form>
+    </div>
+
+    </div>
+  </div>
+</section>
